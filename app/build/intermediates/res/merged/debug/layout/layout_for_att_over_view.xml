@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F68B1F"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#DD7D1C"
+            android:padding="5sp" >
+
+            <TextView
+                android:id="@+id/txtForName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendance"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/txtForTotalMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp" >
+
+            <TextView
+                android:id="@+id/Absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absent"
+                android:textSize="14sp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/totalForAbsent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp" >
+
+            <TextView
+                android:id="@+id/Not_retrieved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not retrieved"
+                android:textSize="14sp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/totalForNotRet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp" >
+
+            <TextView
+                android:id="@+id/Absent_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absent notes"
+                android:textSize="14sp" 
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/txtForAbsentNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:textColor="#fff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

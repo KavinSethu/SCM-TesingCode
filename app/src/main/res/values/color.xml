@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="action_bar">#F2F2F2</color>
+    <color name="white">#fff</color>
+    <color name="off_white">#ffffffff</color>
+    <color name="RED">#ED74A9</color>
+    <color name="DARKRED">#DE6EA0</color>
+
+    <color name="greenStart">#ff33dd44</color>
+    <color name="greenMid">#ff0A8815</color>
+    <color name="greenEnd">#ff1da130</color>
+
+    <color name="black">#000000</color>
+    <color name="grey">#828282</color>
+
+    <color name="edit_color">#F68C1F</color>
+    <color name="schedule">#617DBE</color>
+    <color name="lightgrey">#E5E5E5</color>
+
+    <color name="trans_black">#BF191919</color>
+    <color name="draftcolor">#F29FC4</color>
+
+    <color name="dark_pink">#CB6592</color>
+
+
+    <color name="Turquise">#2FBCD0</color>
+    <color name="newblue">#617CBF</color>
+    <color name="blue">#617DBE</color>
+    <color name="orange">#F68B1F</color>
+    <color name="darkgrey">#666666</color>
+
+    <color name="newgrey">#F5F5F5</color>
+<color name="lms_grey">#B2B2B2</color>
+
+    <!--Event Lib color -->
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
+
+    <color name="line">#E9E9E9</color>
+
+
+    <color name="btn_white_trans">#EDA75E</color>
+
+    <color name="absence_note">#F68C19</color>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newgrey"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/startHeaderText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startdate"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/startDateText1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/startdate"
+        android:textColor="@color/darkgrey"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/startLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey"
+
+        />
+
+    <TextView
+        android:id="@+id/endDateHeaderText1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enddate"
+        android:textColor="@color/black"
+
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/endDateText1"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/enddate"
+        android:textColor="@color/darkgrey"
+
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/endLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey"
+
+        />
+</LinearLayout>

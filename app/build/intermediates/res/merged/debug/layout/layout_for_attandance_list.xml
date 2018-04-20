@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/topMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F68C19"
+        android:padding="2sp">
+
+
+
+        <TextView
+            android:id="@+id/txtForCLassName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:text="Class Name"
+            android:textColor="#fff"
+            android:gravity="center|left"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtForMarkedStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center|right"
+            android:text="0"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/txtForMarkedStudent"
+
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/topMain"
+        android:background="#F68C19">
+
+        <RelativeLayout
+            android:id="@+id/layoutForImgLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5sp"
+            android:background="#DE7E15"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgForProfile"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textForTimeDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/layoutForImgLogo"
+            android:layout_alignLeft="@+id/textForStudentName"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/layoutForCheckBox"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            android:background="#fff">
+
+            <RelativeLayout
+                android:id="@+id/layoutForTick"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0.5dp"
+                android:background="#F68C19">
+
+                <CheckBox
+                    android:id="@+id/imgForCheck"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:button="@null"
+                    android:background="@drawable/check_box_selector" />
+
+                <TextView
+                    android:id="@+id/txtForCheckTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/imgForCheck"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1sp"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textForStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/layoutForImgLogo"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/layoutForImgLogo"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layoutForImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textForTimeDuration"
+            android:layout_marginRight="3sp"
+            android:layout_toLeftOf="@+id/layoutForCheckBox"
+            android:orientation="horizontal"
+            android:padding="2sp">
+
+            <ImageView
+                android:id="@+id/imageForAbsentNotes"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:id="@+id/imageForRetrivalNotes"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

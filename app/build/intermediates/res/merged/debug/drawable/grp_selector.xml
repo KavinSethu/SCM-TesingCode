@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:constantSize="true">
+   <size android:width="15dp" android:height="15dp" />
+    <item  android:drawable="@drawable/grp_unselected" android:state_checked="false" />
+    <item android:drawable="@drawable/grp_selected" android:state_checked="true" />
+    <item android:drawable="@drawable/grp_unselected"></item>
+</selector>

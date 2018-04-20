@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/twofactorText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/darkgrey"
+        android:gravity="center"
+        android:text="Two Factor login required"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/twofactorMailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="The user allvar050 requires two factor login and a code has been sent to hema.tamaraiselvan@kaaylabs.com"
+        android:textColor="@color/darkgrey" />
+
+    <EditText
+        android:id="@+id/factorCodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/factor_code_bg"
+        android:hint="Enter code here"
+        android:padding="5dp"
+        android:textColor="@color/darkgrey"
+        android:textColorHint="@color/darkgrey" />
+
+    <Button
+        android:id="@+id/factorLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue"
+        android:text="Login"
+        android:padding="10dp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

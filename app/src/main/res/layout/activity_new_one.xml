@@ -1,0 +1,638 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="10"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="80"
+            android:background="#E9E9E9"
+            android:gravity="center"
+            android:text="12/12/2016"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="7dp"
+            android:layout_weight="10"
+            android:background="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EA8517"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:background="#EA8517"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/aspiasoldier" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="7dp"
+                        android:background="#EDA75E"
+                        android:text="Edit"
+                        android:textColor="#fff"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="60"
+                    android:background="#EA8517"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/User_FstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="name full"
+                        android:textColor="#fff"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/User_LastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Guardians"
+                        android:textColor="#fff"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/Gardians"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#DE7E15"
+                        android:orientation="horizontal"
+                        android:weightSum="100" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="6dp"
+                            android:layout_weight="95"
+                            android:text="pia siut"
+                            android:textSize="12dp" 
+                            android:textColor="#fff"/>
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            android:background="@drawable/downarrow" />
+                    </LinearLayout>
+
+<!--                     <LinearLayout -->
+<!--                         android:layout_width="match_parent" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_marginRight="7dp" -->
+<!--                         android:layout_marginTop="10dp" -->
+<!--                         android:background="#DE7E15" -->
+<!--                         android:orientation="horizontal" -->
+<!--                         android:weightSum="100" > -->
+
+<!--                         <TextView -->
+<!--                             android:layout_width="0dp" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="6dp" -->
+<!--                             android:layout_weight="95" -->
+<!--                             android:text="pia siut" -->
+<!--                             android:textSize="12dp" -->
+<!--                             android:textColor="#fff" /> -->
+
+<!--                         <ImageView -->
+<!--                             android:layout_width="15dp" -->
+<!--                             android:layout_height="15dp" -->
+<!--                             android:layout_gravity="center_vertical" -->
+<!--                             android:layout_marginLeft="6dp" -->
+<!--                             android:background="@drawable/downarrow" /> -->
+<!--                     </LinearLayout> -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Aditional_Information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_layout"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aditional Information"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ballpoint" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/adtnl_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Aditional_Information"
+                android:text="HTML Color Codes website provides free color tools for finding HTML colors for your website. Great tools HTML color chart and HTML color picker will make this simple as a walk in the park."
+                android:textSize="8dp" />
+
+            <LinearLayout
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adtnl_info"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ballpoint" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:text="HTML Color Codes website provides free color tools for finding HTML colors for your website. Great tools HTML color chart and HTML color picker will make this simple as a walk in the park."
+                android:textSize="8dp" />
+
+            <LinearLayout
+                android:id="@+id/allergies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/des"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="allergies"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ballpoint" />
+            </LinearLayout>
+.
+
+            <TextView
+                android:id="@+id/allerg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/allergies"
+                android:text="HTML Color Codes website provides free color tools for finding HTML colors for your website. Great tools HTML color chart and HTML color picker will make this simple as a walk in the park."
+                android:textSize="8dp" />
+
+            <LinearLayout
+                android:id="@+id/Absence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/allerg"
+                android:layout_marginTop="10dp"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="95"
+                    android:textColor="#fff"
+                    android:text="Absence Note"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+            </LinearLayout>
+
+           
+            
+            <LinearLayout
+                android:id="@+id/Retriever_Note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Absence"
+                android:layout_marginTop="10dp"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="95"
+                    android:text="Retriever Note"
+                    android:textSize="12dp" 
+                    android:textColor="#fff"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/Note_History"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Retriever_Note"
+                android:layout_marginTop="10dp"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="95"
+                    android:text="Note History"
+                    android:textSize="12dp" 
+                    android:textColor="#fff"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/Retrieval_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Note_History"
+                android:layout_marginTop="10dp"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="65"
+                    android:text="Retrieval Time"
+                    android:textSize="12dp"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="30"
+                    android:text="2015/10/21"
+                    android:textSize="12dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Drop_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Retrieval_Time"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="50"
+                    android:text="DropOff"
+                    android:textSize="12dp"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="50"
+                    android:text="Retrieval"
+                    android:textSize="12dp"
+                    android:textColor="#fff" />
+
+                
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Drop_off_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Drop_off"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="50"
+                    android:text="DropOff"
+                    android:textSize="12dp" 
+                    android:gravity="center"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="50"
+                    android:text="Retrieval"
+                    android:textSize="12dp" 
+                    android:background="#fff"
+                     android:gravity="center"/>
+
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/Absence_Days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Drop_off_edit"
+                android:layout_marginTop="10dp"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="50"
+                    android:textColor="#fff"
+                    android:text="Absence Days"
+                    android:textSize="12dp" />
+                
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/From_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Absence_Days"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="33"
+                    android:textColor="#fff"
+                    android:text="From"
+                    android:textSize="12dp" />
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="33"
+                    android:textColor="#fff"
+                    android:text="To"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="33"
+                    android:textColor="#fff"
+                    android:text="By Whome"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <ListView 
+                android:layout_below="@+id/From_to"
+                android:id="@+id/Absns_dys"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                ></ListView>
+            
+            //////////////////
+         ////  
+         <LinearLayout
+                android:id="@+id/Retrieval_History"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Absns_dys"
+                android:layout_marginTop="10dp"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="50"
+                    android:textColor="#fff"
+                    android:text="Absence Days"
+                    android:textSize="12dp" />
+                
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/downarrow" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/Type_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Retrieval_History"
+                android:background="#DE7E15"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="33"
+                    android:textColor="#fff"
+                    android:text="From"
+                    android:textSize="12dp" />
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="33"
+                    android:textColor="#fff"
+                    android:text="To"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:layout_weight="33"
+                    android:textColor="#fff"
+                    android:text="By Whome"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <ListView 
+                android:layout_below="@+id/Type_time"
+                android:id="@+id/Ret_his"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                ></ListView> 
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

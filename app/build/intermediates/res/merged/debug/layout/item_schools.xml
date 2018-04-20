@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/schoolLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/off_white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/schoolText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:paddingLeft="5dp"
+        android:text="A School"
+        android:textColor="@color/darkgrey"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/schoolDomainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center|left"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:paddingLeft="5dp"
+        android:text="Elar"
+
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+
+        />
+</LinearLayout>
+
+    <!--  <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:visibility="gone"
+          android:background="@color/grey" />-->
+

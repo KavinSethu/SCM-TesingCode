@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\left_arow.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\left_arow.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\total.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\total.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\option_reterival.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\option_reterival.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\optionreterival.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\optionreterival.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\left_arrow.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\left_arrow.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\app_icon.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\absent.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\absent.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\present.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\present.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\plus.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\plus.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\l_arrow.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\l_arrow.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\chkbox.png",
+        "source": "D:\\AndroidStudioProjects\\SmartClassRoom_Update\\SCM-TesingCode\\app\\src\\main\\res\\drawable-ldpi\\chkbox.png"
+    }
+]

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customdialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/newgrey"
+    android:minWidth="350dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titlegrpText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/darkgrey"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="@string/select_school"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grpRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/titlegrpText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grpRv"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/grpOkbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="5"
+            android:background="@color/darkgrey"
+            android:text="CANCEL"
+            android:clickable="true"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/grpCancelbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@color/darkgrey"
+            android:text="DONE"
+            android:clickable="true"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

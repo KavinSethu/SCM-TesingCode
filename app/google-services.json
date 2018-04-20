@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "530648049322",
+    "project_id": "smart-class-room"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530648049322:android:26a4a229d8cb128d",
+        "android_client_info": {
+          "package_name": "com.pnf.elar.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1Ug-IIPA7v8cf7LlBMrToTtCJio4K4ig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

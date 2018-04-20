@@ -1,0 +1,302 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/listdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/filterMinLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ED74A9">
+
+            <TextView
+                android:id="@+id/mainFilterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:text="@string/Filter"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/down" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/filter_save_draft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/RED"
+            android:visibility="gone"
+            tools:context="com.pnf.elar.app.activity.FilterSaveDraftActivity">
+
+
+            <TextView
+                android:id="@+id/subFilterHeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/Filter"
+                android:textColor="#fff"
+                android:textSize="21dp" />
+
+            <EditText
+                android:id="@+id/filterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subFilterHeaderText"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#fff"
+                android:hint="@string/Filter"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/fromto_tilte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterEditText"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="From"
+                    android:textColor="#ffffff"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="To"
+                    android:textColor="#ffffff"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fromtoDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fromto_tilte"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/fromdatePicker"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="50"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="YYYY-MM-DD"
+                    android:textColor="#848484"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/todatePicker"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="50"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="YYYY-MM-DD"
+                    android:textColor="#848484"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/mineonlyCheckBox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/fromtoDatePicker"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mine_selector"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fromtoDatePicker"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/mineonlyCheckBox"
+                android:text="@string/mine_only"
+                android:textColor="#fff" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5"
+                    android:background="#F29FC4"
+                    android:text="CANCEL"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/filterBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5"
+                    android:background="#F29FC4"
+                    android:text="@string/filter"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/listdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/dark_pink"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="31"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textColor="#fff" />
+            <!--         <TextView  -->
+            <!--         android:layout_height="match_parent" -->
+            <!--         android:layout_width="2dp" -->
+            <!--         android:background="#fff" -->
+            <!--         /> -->
+            <TextView
+                android:id="@+id/byTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="32"
+                android:gravity="center"
+                android:text="@string/by"
+                android:textColor="#fff" />
+            <!--         <TextView  -->
+            <!--         android:layout_height="match_parent" -->
+            <!--         android:layout_width="2dp" -->
+            <!--         android:background="#fff" -->
+            <!--         /> -->
+            <TextView
+                android:id="@+id/forTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="33"
+                android:gravity="center"
+                android:text="@string/for_label"
+                android:textColor="#fff" />
+            <!--         <TextView  -->
+            <!--         android:layout_height="match_parent" -->
+            <!--         android:layout_width="2dp" -->
+            <!--         android:background="#fff" -->
+            <!--         /> -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/attachfile" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#fff" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListSaveDraft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listdt"
+        android:layout_marginBottom="50dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/removeDraftBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="50"
+            android:background="#ED74A9"
+
+            android:text="@string/removedraft"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/useDraftBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="50"
+            android:background="#ED74A9"
+            android:text="@string/usedraft"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_filter_save_draft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/RED"
+    tools:context="com.pnf.elar.app.activity.FilterSaveDraftActivity">
+
+
+    <TextView
+        android:id="@+id/subFilterHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:text="@string/Filter"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/filterEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subFilterHeaderText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:background="#fff"
+        />
+
+    <LinearLayout
+        android:id="@+id/fromto_tilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filterEditText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/fromText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="From"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/toText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="To"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fromtoDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromto_tilte"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/fromdatePicker"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="50"
+            android:background="#fff"
+            android:gravity="center"
+            android:textColor="#848484"
+            android:text="YYYY-MM-DD"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/todatePicker"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="50"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="YYYY-MM-DD"
+            android:textColor="#848484"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/mineonlyCheckBox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/fromtoDatePicker"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:button="@null"
+        android:background="@drawable/mine_selector" />
+
+    <TextView
+        android:id="@+id/mineonlyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromtoDatePicker"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/mineonlyCheckBox"
+        android:text="@string/mine_only"
+        android:textColor="#fff" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5"
+            android:background="#F29FC4"
+            android:text="CANCEL"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/filterBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5"
+            android:background="#F29FC4"
+            android:text="@string/filter"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</RelativeLayout>

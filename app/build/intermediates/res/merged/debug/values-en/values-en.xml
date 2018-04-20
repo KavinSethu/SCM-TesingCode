@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>Swedish</item>
+        <item>English</item>
+    </string-array>
+    <color name="DARKRED">#DE6EA0</color>
+    <color name="RED">#ED74A9</color>
+    <color name="action_bar">#fff</color>
+    <color name="off_white">#ffffffff</color>
+    <color name="white">#ffffffff</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="CURRICULUM_TAGS">CURRICULUM TAGS</string>
+    <string name="Create">Create</string>
+    <string name="Description">Description</string>
+    <string name="Filter">Filter</string>
+    <string name="Groups">Groups</string>
+    <string name="NOTIFY_BY_MAIL">NOTIFY BY MAIL</string>
+    <string name="New_Post">New Post</string>
+    <string name="PUBLISH">PUBLISH</string>
+    <string name="Posts">Posts</string>
+    <string name="Publish">Publish</string>
+    <string name="RETRIEVE_DRAFT">RETRIEVE DRAFT</string>
+    <string name="SAVE_DRAFT">SAVE DRAFT</string>
+    <string name="Students">Students</string>
+    <string name="action_day_view">Day</string>
+    <string name="action_month_view">Month</string>
+    <string name="action_today">Today</string>
+    <string name="action_week_view">Week</string>
+    <string name="addactivity">Add Activity</string>
+    <string name="addvaccation">Add Vaccation</string>
+    <string name="agree">Acceptera</string>
+    <string name="all">All</string>
+    <string name="by">By</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_all_term">Please Check all Term of Use</string>
+    <string name="check_network_conn">Please Check your Network connection</string>
+    <string name="childInfo">Child Info</string>
+    <string name="create">Create</string>
+    <string name="curriculum">CURRICULUM TAGS</string>
+    <string name="cust_validation">Please select your Customer</string>
+    <string name="date">Date</string>
+    <string name="delete">Delete</string>
+    <string name="description">Description</string>
+    <string name="disagree">Nedgång </string>
+    <string name="download_completed">download completed</string>
+    <string name="download_failed">download failed..please try again</string>
+    <string name="edit">Edit</string>
+    <string name="edu_blog">Edu Blog</string>
+    <string name="email">email</string>
+    <string name="enddate">End Date</string>
+    <string name="error_internet">Your internet connection is not enabled. Please turn on to use the application</string>
+    <string name="file_download">File for download</string>
+    <string name="filter">FILTER</string>
+    <string name="for_label">For</string>
+    <string name="forgot">Forgot Your Password?</string>
+    <string name="from">From:</string>
+    <string name="go_to_login">An email has been sent with instructions to reset your password.</string>
+    <string name="groups">Groups</string>
+    <string name="image_error">Image Does Not exist or Network Error</string>
+    <string name="image_saved">Image saved</string>
+    <string name="imagenot_saved">Image not saved</string>
+    <string name="internet">Internet</string>
+    <string name="invalid_user_pwd">Invalid username and Password....</string>
+    <string name="lang">Language</string>
+    <string name="loading_image">Loading Image ....</string>
+    <string name="login">Log in</string>
+    <string name="logout">Logout</string>
+    <string name="mine_only">Mine only</string>
+    <string name="my_account">My Account</string>
+    <string name="network_turnon_error">No Internet connection , Connect to closest wifi with internet connection &amp; try again</string>
+    <string name="new_post">New Post</string>
+    <string name="no">No</string>
+    <string name="notify">Notify By Mail</string>
+    <string name="password">Password</string>
+    <string name="post">Posts</string>
+    <string name="posts">Posts</string>
+    <string name="pwd_validation">Please enter password</string>
+    <string name="remember_me">Remember Me?</string>
+    <string name="removedraft">Remove Draft</string>
+    <string name="replace">Replace</string>
+    <string name="retrieval_list">Retrieval List</string>
+    <string name="retrieve">RETRIEVE DRAFT</string>
+    <string name="save">Save</string>
+    <string name="save_draft">Save Draft</string>
+    <string name="save_error">Error occured. Please try again later.</string>
+    <string name="schedule_title">Schedule Title</string>
+    <string name="select_customer">Organization</string>
+    <string name="select_school">Select your school</string>
+    <string name="startdate">Start Date</string>
+    <string name="student_selected">Student Selected</string>
+    <string name="students">Students</string>
+    <string name="submit">Submit</string>
+    <string name="success">Success</string>
+    <string name="term_of_use">Terms of Use</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="to">To:</string>
+    <string name="upload">Upload Image/Video</string>
+    <string name="upload_image_video">Upload image/Video</string>
+    <string name="usedraft">Use Draft</string>
+    <string name="user_selected">User Selected</string>
+    <string name="user_validation">Plese enter Username/Email</string>
+    <string name="username">Username / Email</string>
+    <string name="users">Users</string>
+    <string name="video">Video</string>
+    <string name="wait_progress">Please wait....</string>
+    <string name="yes">Yes</string>
+    <style name="AppTheme" parent="android:Theme.Light">
+
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_down</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>

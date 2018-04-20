@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/foodMenuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/schedule"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="3dp"
+        android:text="Food Menu"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</RelativeLayout>

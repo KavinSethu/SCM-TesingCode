@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_vaccation_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/schedule"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pnf.elar.app.activity.schedule.AddWholedaySickParentActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wholeDayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=" Mark sick for whole day "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/closeSickImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/wholeDayText"
+
+
+                android:src="@drawable/cross" />
+
+            <TextView
+                android:id="@+id/descLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wholeDayText"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:text="Description:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descLabelText"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:minHeight="50dp"
+                android:hint="Please leave notes here"
+                android:textColorHint="@color/lightgrey"
+                android:textColor="@color/darkgrey"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/descriptionEditText"
+                android:layout_marginTop="10dp"
+                android:background="#90A4D2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Save Changes"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

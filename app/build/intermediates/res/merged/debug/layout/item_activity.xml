@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activityNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="2dp"
+        android:text="saas"
+        />
+    <TextView
+        android:id="@+id/tv_startDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkgrey"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/tv_endDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkgrey"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgrey"
+        />
+</LinearLayout>

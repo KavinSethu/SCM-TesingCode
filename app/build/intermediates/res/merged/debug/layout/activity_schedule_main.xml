@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_schedule_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerLayput"
+        layout="@layout/schedule_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <LinearLayout
+        android:id="@+id/foodHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayput"
+        android:background="@color/white"
+        android:padding="1dp"
+        android:weightSum="6"
+
+        >
+
+        <Button
+            android:id="@+id/foodNoteBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="6"
+            android:background="@color/newblue"
+            android:gravity="center"
+            android:text="Food Note"
+            android:textColor="@color/white"
+            android:visibility="gone"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/addFoodMenuLayout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@color/newblue"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/addMenuImage"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_add"
+
+
+                />
+
+            <TextView
+                android:id="@+id/addFoodMenuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="Food Menu"
+                android:textColor="@color/white"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouthead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/foodHeader"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp"
+        android:visibility="visible"
+        android:weightSum="12">
+
+        <Button
+            android:id="@+id/actionMonthView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="3"
+            android:background="@color/newblue"
+            android:gravity="center"
+            android:text="@string/action_month_view"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/actionWeekView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="3"
+            android:background="@color/newblue"
+            android:gravity="center"
+            android:text="@string/action_week_view"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/actionDayView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="3"
+            android:background="@color/newblue"
+            android:gravity="center"
+            android:text="@string/action_day_view"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/actionToday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/newblue"
+            android:gravity="center"
+            android:text="@string/action_today"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <!--  <CalendarView
+          android:id="@+id/monthCalendeView"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_below="@+id/layouthead"
+
+          android:visibility="visible" />-->
+    <!-- <com.marcohc.robotocalendar.RobotoCalendarView
+         android:id="@+id/monthCalendeView"
+         android:layout_width="match_parent"
+         android:background="@color/white"
+         android:layout_below="@+id/layouthead"
+
+         android:layout_height="wrap_content" />-->
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/monthCalendeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouthead"
+
+        />
+
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/monthCalendeView"
+        android:visibility="gone"
+        app:columnGap="8dp"
+        app:dayBackgroundColor="#05000000"
+        app:eventTextColor="@android:color/white"
+        app:headerColumnBackground="#ffffffff"
+        app:headerColumnPadding="8dp"
+        app:headerColumnTextColor="@color/toolbar_text"
+        app:headerRowBackgroundColor="@color/toolbar"
+        app:headerRowPadding="12dp"
+        app:hourHeight="60dp"
+        app:noOfVisibleDays="3"
+        app:textSize="12sp"
+        app:todayBackgroundColor="#1848adff"
+        app:todayHeaderTextColor="@color/accent" />
+
+</RelativeLayout>

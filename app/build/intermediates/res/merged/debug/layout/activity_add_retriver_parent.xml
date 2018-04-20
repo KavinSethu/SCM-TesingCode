@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_retriver_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F68C19"
+    android:orientation="vertical"
+    tools:context="com.pnf.elar.app.activity.schedule.AddRetriverParentActivity">
+    <ImageView
+        android:id="@+id/removeRetBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:src="@drawable/ic_delete" />
+    <include
+        layout="@layout/add_retrival_notes_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

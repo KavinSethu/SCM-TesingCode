@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:weightSum="100"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/imageone"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="10"
+        android:background="@drawable/defaultimg" />
+
+    <TextView
+        android:id="@+id/lli"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:gravity="center|left"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="85" />
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_weight="5"
+        android:background="@drawable/cross"
+        android:gravity="center" />
+
+
+</LinearLayout>

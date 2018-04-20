@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+         >
+
+        <ImageView 
+            android:id="@+id/img"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:scaleType="center"
+           android:visibility="gone"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/arrow" />
+
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img"
+            android:fontFamily="opensansregular.ttf"
+            android:text="My Account"
+            android:textColor="#888"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="opensansregular.ttf"
+
+            android:text="Edu Blog"
+            android:gravity="center"
+            android:textColor="#737373"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+                <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/serhc"
+            android:background="@drawable/refresh"
+             android:layout_marginRight="10dp" />
+
+<!--        <SearchView -->
+<!--            android:id="@+id/serhc" -->
+<!--            android:layout_width="wrap_content" -->
+<!--            android:layout_height="wrap_content" -->
+<!--            android:layout_centerVertical="true" -->
+<!--            android:layout_marginRight="0dp" -->
+<!--            android:layout_toLeftOf="@+id/img2" -->
+<!--            android:layout_toRightOf="@+id/txt2" -->
+<!--            android:outlineProvider="background" > -->
+<!-- </SearchView> -->
+        
+        <ImageView
+            android:id="@+id/serhc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img2"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/srch" />
+<!--         <ImageView -->
+<!--             android:id="@+id/refresh" -->
+<!--             android:layout_width="10dp" -->
+<!--             android:layout_height="10dp" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_toLeftOf="@+id/img2" -->
+<!--             android:layout_toRightOf="@+id/serhc" -->
+<!--             android:background="@drawable/refresh" /> -->
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="35dp"
+            android:layout_height="300dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#F2F2F2"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+<!--  android:background="#F2F2F2" -->

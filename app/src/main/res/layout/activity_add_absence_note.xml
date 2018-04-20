@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_absence_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/absence_note"
+   >
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/userheaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/userNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/userheaderText"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/dateLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userNameText"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/fromDateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date:"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/fromDateText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:padding="7dp"
+                            android:text="YYYY-MM-DD"
+                            android:textColor="#88888E"
+                            android:textColorHint="#88888E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/toDateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To:"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/toDateText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:padding="7dp"
+                            android:text="YYYY-MM-DD"
+                            android:textColor="#88888E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/leaveTypeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateLayout"
+                    android:layout_margin="6dp"
+                    android:text="Select leave type:"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/leaveTypeSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/leaveTypeLabel"
+                    android:layout_margin="5sp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/noteLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/leaveTypeSpinner"
+                    android:layout_margin="6dp"
+                    android:text="Note:"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/leaveNoteEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_below="@+id/noteLabel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/white"
+                    android:gravity="top|left"
+                    android:hint=""
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#88888E"
+                    android:textColorHint="#88888E"
+
+                    android:textSize="12sp" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/markLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/leaveNoteEditText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/markAbsentChk"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/absence_selector"
+                        android:button="@null"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/markAbsentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Mark as absent"
+                        android:visibility="visible"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+               <!-- <TextView
+                    android:id="@+id/example"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/markLayout"
+
+                    />-->
+                <RelativeLayout
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_below="@+id/markLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <Button
+                        android:id="@+id/btnForCancel"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#F9B063"
+                        android:text="CANCEL"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                    <Button
+                        android:id="@+id/btnForSend"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#F9B063"
+                        android:text="SEND"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+</RelativeLayout>

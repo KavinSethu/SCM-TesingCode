@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_croplibrary" default="compile.module.croplibrary">
+  <dirname property="module.croplibrary.basedir" file="${ant.file.module_croplibrary}"/>
+  
+  <property name="module.jdk.home.croplibrary" value="${jdk.home.android_api_22_platform}"/>
+  <property name="module.jdk.bin.croplibrary" value="${jdk.bin.android_api_22_platform}"/>
+  <property name="module.jdk.classpath.croplibrary" value="jdk.classpath.android_api_22_platform"/>
+  
+  <property name="compiler.args.croplibrary" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="croplibrary.output.dir" value="${module.croplibrary.basedir}/build/intermediates/classes/debug"/>
+  <property name="croplibrary.testoutput.dir" value="${module.croplibrary.basedir}/build/intermediates/classes/test/debug"/>
+  
+  <path id="croplibrary.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="croplibrary.module.production.classpath">
+    <path refid="${module.jdk.classpath.croplibrary}"/>
+  </path>
+  
+  <path id="croplibrary.runtime.production.module.classpath">
+    <pathelement location="${croplibrary.output.dir}"/>
+  </path>
+  
+  <path id="croplibrary.module.classpath">
+    <path refid="${module.jdk.classpath.croplibrary}"/>
+    <pathelement location="${croplibrary.output.dir}"/>
+  </path>
+  
+  <path id="croplibrary.runtime.module.classpath">
+    <pathelement location="${croplibrary.testoutput.dir}"/>
+    <pathelement location="${croplibrary.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.croplibrary">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.croplibrary">
+    <patternset refid="excluded.from.module.croplibrary"/>
+  </patternset>
+  
+  <path id="croplibrary.module.sourcepath">
+    <dirset dir="${module.croplibrary.basedir}">
+      <include name="build/generated/source/r/debug"/>
+      <include name="build/generated/source/aidl/debug"/>
+      <include name="build/generated/source/buildConfig/debug"/>
+      <include name="build/generated/source/rs/debug"/>
+      <include name="build/generated/res/rs/debug"/>
+      <include name="src/main/res"/>
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  <path id="croplibrary.module.test.sourcepath">
+    <dirset dir="${module.croplibrary.basedir}">
+      <include name="build/generated/source/r/androidTest/debug"/>
+      <include name="build/generated/source/aidl/androidTest/debug"/>
+      <include name="build/generated/source/buildConfig/androidTest/debug"/>
+      <include name="build/generated/source/rs/androidTest/debug"/>
+      <include name="build/generated/res/rs/androidTest/debug"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.croplibrary" depends="compile.module.croplibrary.production,compile.module.croplibrary.tests" description="Compile module cropLibrary"/>
+  
+  <target name="compile.module.croplibrary.production" depends="register.custom.compilers" description="Compile module cropLibrary; production classes">
+    <mkdir dir="${croplibrary.output.dir}"/>
+    <javac2 destdir="${croplibrary.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.croplibrary}/javac">
+      <compilerarg line="${compiler.args.croplibrary}"/>
+      <bootclasspath refid="croplibrary.module.bootclasspath"/>
+      <classpath refid="croplibrary.module.production.classpath"/>
+      <src refid="croplibrary.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.croplibrary"/>
+    </javac2>
+    
+    <copy todir="${croplibrary.output.dir}">
+      <fileset dir="${module.croplibrary.basedir}/build/generated/source/r/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/build/generated/source/aidl/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/build/generated/source/buildConfig/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/build/generated/source/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/build/generated/res/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/src/main/res">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.croplibrary.tests" depends="register.custom.compilers,compile.module.croplibrary.production" description="compile module cropLibrary; test classes" unless="skip.tests">
+    <mkdir dir="${croplibrary.testoutput.dir}"/>
+    <javac2 destdir="${croplibrary.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.croplibrary}/javac">
+      <compilerarg line="${compiler.args.croplibrary}"/>
+      <bootclasspath refid="croplibrary.module.bootclasspath"/>
+      <classpath refid="croplibrary.module.classpath"/>
+      <src refid="croplibrary.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.croplibrary"/>
+    </javac2>
+    
+    <copy todir="${croplibrary.testoutput.dir}">
+      <fileset dir="${module.croplibrary.basedir}/build/generated/source/r/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/build/generated/source/aidl/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/build/generated/source/buildConfig/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/build/generated/source/rs/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.croplibrary.basedir}/build/generated/res/rs/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.croplibrary" description="cleanup module">
+    <delete dir="${croplibrary.output.dir}"/>
+    <delete dir="${croplibrary.testoutput.dir}"/>
+  </target>
+</project>

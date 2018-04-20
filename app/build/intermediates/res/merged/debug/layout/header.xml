@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E6E6E6" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/linr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="30"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/header_image"
+                android:layout_width="61dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:src="@drawable/roundedimageview"
+                android:scaleType="fitXY"
+                android:background="#F2F2F2"
+              />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="20"
+                android:text="lial789"
+                android:textSize="10dp"
+                android:textColor="#88888E" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/linr"
+            android:layout_weight="70"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#88888E"
+                android:text="132"
+                android:textSize="12sp" />
+            <!-- android:text="Futuristic School" -->
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="5dp"
+                 android:textColor="#88888E"
+                android:textSize="11dp"
+                android:text="132"
+                />
+            <!-- android:text="Linda Alm" -->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="5dp"
+                 android:textColor="#88888E"
+                android:text="13"
+                android:textSize="11dp" />
+            <!-- android:text="Admin" -->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/Other_Account"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/linear"
+        android:background="#E6E6E6"
+        android:text="Linked Accounts"
+        android:paddingLeft="13dp"
+        android:textColor="#88888E"
+        android:textColorHint="#B4B4B4"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="1dp"/>
+
+</RelativeLayout>

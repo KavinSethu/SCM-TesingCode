@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pnf.elar.app.TermsOfUseActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:layout_above="@+id/bottom"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/app_icon"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/term_of_use"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <com.Util.Model.NonScroll.NonScrollListView
+            android:layout_width="match_parent"
+            android:id="@+id/lv_terms_of_use"
+            android:layout_height="wrap_content" />
+
+        <com.Util.Model.NonScroll.NonScrollListView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lv_terms_of_use_checkbox"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_price"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="visible"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardMaxElevation="2sp"
+            card_view:cardUseCompatPadding="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/disagree"
+            android:gravity="center"
+            android:id="@+id/tv_disagree"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_price"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="visible"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardMaxElevation="2sp"
+            card_view:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/logout"
+            android:gravity="center"
+            android:id="@+id/tv_logout"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_price"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="visible"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardMaxElevation="2sp"
+            card_view:cardUseCompatPadding="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/agree"
+            android:id="@+id/tv_agree"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

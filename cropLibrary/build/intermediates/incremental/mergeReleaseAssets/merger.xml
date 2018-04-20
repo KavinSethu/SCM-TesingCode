@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\AndroidStudioProjects\SmartClassRoom_Update\SCM-TesingCode\cropLibrary\src\main\assets"/><source path="D:\AndroidStudioProjects\SmartClassRoom_Update\SCM-TesingCode\cropLibrary\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\AndroidStudioProjects\SmartClassRoom_Update\SCM-TesingCode\cropLibrary\src\release\assets"/></dataSet></merger>

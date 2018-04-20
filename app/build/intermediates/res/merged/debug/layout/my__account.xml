@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <GridView
+        android:id="@+id/gridForCategory"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:numColumns="2"
+        android:columnWidth="90dp"
+        android:layout_margin="10dp"
+        android:verticalSpacing="10dp" 
+        android:horizontalSpacing="10dp"
+        android:background="#fff">
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/trackBusLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/dark_pink"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_bus"
+        android:text="Track Bus"
+        android:layout_marginTop="10dp"
+
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Track Bus"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

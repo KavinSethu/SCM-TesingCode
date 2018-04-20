@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/retriveLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="2dp"
+    android:background="@color/RED"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/datetext"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="28"
+
+        android:gravity="center"
+        android:text="1321456"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/by"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="28"
+        android:gravity="center"
+        android:text="1321456"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/grps"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="28"
+        android:gravity="center"
+        android:text="1321456"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+
+        android:layout_weight="16">
+
+        <ImageView
+            android:id="@+id/imgsavedraft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/imageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top|center"
+            android:background="@color/trans_black"
+            android:gravity="center"
+            android:minHeight="20dp"
+            android:minWidth="20dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

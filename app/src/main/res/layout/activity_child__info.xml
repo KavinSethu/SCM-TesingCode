@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--  <TextView
+                  android:id="@+id/Child_Info"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="50dp"
+                  android:text="Child Info"
+                  android:textColor="#fff"
+                  android:textSize="25dp" />
+
+                          android:layout_below="@+id/Child_Info"
+
+                  -->
+
+            <ImageView
+                android:id="@+id/childImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/manjit" />
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_toRightOf="@+id/childImage"
+                android:gravity="center|left"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/childFnameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Henrik "
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/childLnameText"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Henrik "
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/editImageBtn"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/childImage"
+                android:layout_marginLeft="10dp"
+                android:background="@color/edit_color"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/editLayout"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/editImageBtn"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/changeImageBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/replace" />
+
+                <Button
+                    android:id="@+id/removeImageBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/remove" />
+
+                <Button
+                    android:id="@+id/closeImageBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/close" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Contact_Information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Contact Information :"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/c_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Contact_Information"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:inputType="textMultiLine"
+                android:padding="7dp"
+                android:textColor="#88888E"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/Allergies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_info"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Allergies : "
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/Additional_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Allgies"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Additional Text : "
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/Add_text"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/Additional_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+
+                android:padding="7dp"
+                android:textColor="#88888E"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Add_text"
+                android:layout_marginTop="57dp"
+                android:padding="5dp"
+
+                >
+
+                <Button
+                    android:id="@+id/SaveChildInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#DDDDDD"
+                    android:padding="6dp"
+                    android:text="Save Changes"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="#DDDDDD"
+                    android:padding="5dp"
+                    android:text="Close"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/Allgies"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#fff"
+                android:gravity="top"
+                android:padding="7dp"
+                android:textColor="#88888E"
+                android:textSize="12dp"
+                android:layout_below="@+id/Allergies"
+                android:layout_alignLeft="@+id/c_info"
+                android:layout_alignStart="@+id/c_info" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

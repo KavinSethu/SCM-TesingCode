@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pnf.elar.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.pnf.elar.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <receiver
+            android:name="com.pnf.elar.app.GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+
+                <category android:name="com.pnf.elar.app" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name=".pushnotification.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.pnf.elar.app" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.pnf.elar.app" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <service android:name=".pushnotification.GCMNotificationIntentService" />
+
+        <!--
+         <receiver
+             android:name=".GcmBroadcastReceiver"
+             android:permission="com.google.android.c2dm.permission.SEND">
+             <intent-filter>
+                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                 <category android:name="com.pnf.elar.app" />
+             </intent-filter>
+         </receiver>
+        -->
+
+
+        <!-- <service android:name="com.pnf.elar.app.GCMNotificationIntentService" /> -->
+        <!--
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.pnf.elar.app" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!--
+        <receiver
+            android:name="com.nfocus.pushnotification.GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                &lt;!&ndash;    <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> &ndash;&gt;
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+
+                <category android:name="com.nfocus.pushnotification" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.nfocus.pushnotification.GCMNotificationIntentService" />
+        -->
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Remember_me"
+            android:label="@string/title_activity_remember_me"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Forgot_password"
+            android:label="@string/title_activity_forgot_password"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!--
+        <activity
+            android:name=".FilePicker"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <!--
+          <activity
+              android:name=".My_Account"
+              android:label="@string/title_activity_my__account"
+              android:screenOrientation="portrait"></activity>
+          <activity
+              android:name=".MainActivity"
+              android:screenOrientation="portrait"></activity>
+          <activity
+              android:name=".Post"
+              android:label="@string/title_activity_post"
+              android:screenOrientation="portrait"></activity>
+          <activity android:name=".GifView"></activity>
+          <activity
+              android:name=".Post_filtter"
+              android:label="@string/title_activity_post_filtter"
+              android:screenOrientation="portrait"></activity>
+        -->
+        <!--
+          <activity
+              android:name=".ImageActivity"
+              android:label="@string/title_activity_image"></activity>
+          <activity
+              android:name=".Publish"
+              android:label="@string/title_activity_publish"
+              android:largeHeap="true"
+              android:screenOrientation="portrait"></activity>
+        -->
+        <activity
+            android:name=".Post_play_video"
+            android:label="@string/title_activity_post_play_video" />
+        <activity
+            android:name=".Curriculum_tags"
+            android:screenOrientation="portrait" />
+        <!--
+               <activity
+               android:name=".CustomAdptercurculm_listtwo"
+               android:label="@string/title_activity_custom_adptercurculm_listtwo"></activity>
+        -->
+        <activity
+            android:name=".Curriculam_tag_post"
+            android:screenOrientation="portrait" />
+        <!--
+                <activity
+                android:name=".Edit_post"
+                android:label="@string/title_activity_edit_post"
+                android:screenOrientation="portrait"></activity>
+            <activity
+                android:name=".News_main"
+                android:screenOrientation="portrait"></activity>
+            <activity
+                android:name=".Edit_news"
+                android:screenOrientation="portrait"></activity>
+            <activity
+                android:name=".News_Post"
+                android:screenOrientation="portrait"></activity>
+        -->
+        <activity
+            android:name=".Curriculam_tag_edit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Drawer"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <!--
+           <activity
+               android:name=".Setting"
+               android:label="@string/title_activity_setting"
+               android:screenOrientation="portrait"></activity>
+           <activity
+               android:name=".NewOne"
+               android:label="@string/title_activity_new_one"></activity>
+        -->
+        <activity
+            android:name=".View_pageraimages"
+            android:label="@string/title_activity_view_pageraimages"
+            android:screenOrientation="portrait" />
+        <!--
+           <activity
+               android:name=".ParentsChild"
+               android:label="@string/title_activity_parents_child"></activity>
+           <activity
+               android:name=".ParentsChildrn3"
+               android:label="@string/title_activity_parents_childrn3"></activity>
+           <activity
+               android:name=".ParentChildComponent"
+               android:label="@string/title_activity_parent_child_component"></activity>
+           <activity
+               android:name=".Child_Info"
+               android:label="@string/title_activity_child__info"></activity>
+        -->
+        <!-- </application> -->
+        <!-- <application> -->
+        <!--
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.pnf.elar.app" />
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- <service -->
+        <!-- android:name="com.example.MyGcmListenerService" -->
+        <!-- android:exported="false" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!--
+        <service
+            android:name="com.example.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        -->
+
+
+        <!--
+         <activity
+             android:name=".MyCustomProgressDialog"
+             android:label="@string/title_activity_my_custom_progress_dialog"></activity>
+         <activity
+             android:name=".NewsImageZoom"
+             android:label="@string/title_activity_news_image_zoom"></activity>
+         <activity
+             android:name=".SaveDraft"
+             android:label="@string/title_activity_save_draft"></activity>
+        -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="859576bb7005c1b13b6c3c8f59684660dd33659d" />
+
+        <activity
+            android:name=".FootMenuPdfView"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CurTagDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <!--
+            <activity
+            android:name=".activity.schedule.ScheduleMainActivity"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".activity.schedule.AsynchronousActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.schedule.ActivityListByDateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.schedule.AddActivityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.schedule.AddVaccationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.schedule.AddFoodMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PhotoGalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--
+            <activity android:name=".activity.VideoGalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+        -->
+        <activity
+            android:name=".activity.schedule.FoodNoteActivity"
+            android:label="@string/title_activity_add_foot_note"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".util.FileUpload.FileChooser"
+            android:label="Choose File"
+            android:theme="@android:style/Theme.Holo"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".FilePicker" />
+        <activity
+            android:name=".activity.schedule.AddAbsenceNoteTeacherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.schedule.ViewAbsentNoteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.schedule.UpdateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.schedule.AddActivityParent"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.schedule.AddRetriverParentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.schedule.AddActivityStudent"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.schedule.AddWholedaySickParentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.schedule.ViewactivityStudentParent"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".TermsOfUseActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

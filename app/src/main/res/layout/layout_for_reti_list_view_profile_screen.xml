@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/retMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F68C19">
+
+    <ImageView
+        android:id="@+id/imageForDelete2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/cross" />
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="30sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtForFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-----------" />
+
+        <TextView
+            android:id="@+id/txtForTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.28"
+            android:text="-----------" />
+
+        <ImageView
+            android:id="@+id/imageForEdit1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight=".05"
+            android:background="@drawable/edit" />
+
+        <TextView
+            android:id="@+id/txtForByWhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="-----------" />
+
+        <ImageView
+            android:id="@+id/imageForDelete"
+            android:layout_width="20dp"
+            android:layout_height="20sp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="30sp"
+        android:layout_below="@+id/main"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/txtForFromRet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:inputType="textCapWords"
+
+
+           />
+
+        <TextView
+            android:id="@+id/txtForToRet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+             />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5">
+
+            <ImageView
+                android:id="@+id/imageForEdit2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/edit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtForByWhomeRet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="4"
+           />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageForDeleteRet"
+                android:layout_width="15dp"
+                android:layout_height="15sp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

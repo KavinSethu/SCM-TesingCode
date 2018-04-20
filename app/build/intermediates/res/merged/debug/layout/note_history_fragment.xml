@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F68C19" >
+
+    <RelativeLayout
+        android:id="@+id/layoutForStudentDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTop"
+        android:background="#E88418"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/layoutForUserImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#E88418" >
+
+            <ImageView
+                android:id="@+id/imgForUserImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/manjit" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/layoutForUserImage"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtForGuardian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtForUserName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toRightOf="@+id/layoutForUserImage"
+            android:text="Guardians"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutForGuardian1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtForGuardian"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/layoutForUserImage"
+            android:background="#D97A13" >
+
+            <TextView
+                android:id="@+id/txtForGuardian1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="5sp"
+                android:padding="1sp"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutForGuardian2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutForGuardian1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/layoutForUserImage"
+            android:background="#D97A13" >
+
+            <TextView
+                android:id="@+id/txtForGuardian2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="5sp"
+                android:padding="1sp"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnForEditProfile"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/layoutForUserImage"
+            android:layout_marginTop="5sp"
+            android:background="#EDA75E"
+            android:text="Edit"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listForNoteHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutForStudentDetail"
+        android:layout_marginTop="10sp" >
+    </ListView>
+
+</RelativeLayout>

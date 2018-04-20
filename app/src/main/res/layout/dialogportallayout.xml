@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customdialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:minWidth="300dp"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/darkgrey"
+        android:text="@string/select_school"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:gravity="center|left"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/schoolAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/titleText"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+    <ListView
+        android:id="@+id/dialoglist"
+        android:layout_below="@+id/schoolAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

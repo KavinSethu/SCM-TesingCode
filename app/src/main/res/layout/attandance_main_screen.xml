@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F68C19"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/mainTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:background="#DDDDDD">
+
+        <RelativeLayout
+            android:id="@+id/backLeft"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="1sp"
+            android:background="#E9E9E9"
+            android:padding="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="&lt;&lt;"
+                android:textColor="#898989"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70sp"
+            android:layout_margin="1sp"
+            android:layout_toLeftOf="@+id/backRight"
+            android:layout_toRightOf="@+id/backLeft"
+            android:background="#E9E9E9">
+
+            <TextView
+                android:id="@+id/txtForCurrentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#898989"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/backRight"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="1sp"
+            android:background="#E9E9E9"
+            android:padding="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=">>"
+                android:textColor="#898989"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/spinnerForOption"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTop"
+        android:background="#E9E9E9"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Select Group"
+        android:textColor="#666666"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/optionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerForOption"
+        android:background="#F68C19"
+        android:padding="8sp">
+
+        <TextView
+            android:id="@+id/Options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text=">"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/optionLayout"
+        android:background="@color/line"
+
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/optionLayoutForOptions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineView"
+        android:layout_marginTop="2sp"
+        android:background="#F68C19"
+        android:padding="5sp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:background="#DD7D1C">
+
+            <TextView
+                android:id="@+id/txtForAttandanceOverView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:text="Attendance overview"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text=">"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="2sp"
+            android:background="#DD7D1C">
+
+            <TextView
+                android:id="@+id/txtForScheduleAttandance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5sp"
+                android:text="Schedule attendance"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text=">"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/layout2"
+            android:layout_marginTop="2sp"
+            android:background="#E8E8E8"
+            >
+
+            <ImageView
+                android:id="@+id/srchide"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:background="@drawable/serach_light" />
+
+            <EditText
+                android:id="@+id/serchbar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@+id/srchide"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/serach"
+                android:gravity="center|left"
+                android:hint="Free Search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="5sp"
+                android:textColor="@color/darkgrey"
+                android:textColorHint="@color/lightgrey"
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/srchshow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/srchtwo"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/line2View"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/optionLayoutForOptions"
+        android:background="@color/line"
+        />
+    <RelativeLayout
+        android:id="@+id/layoutForListHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/optionLayoutForOptions"
+        android:layout_marginTop="1sp"
+        android:background="#F68C19">
+
+        <TextView
+            android:id="@+id/updatedTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rlChildren"
+            android:paddingRight="2dp"
+            android:text=""
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rlChildren"
+            android:layout_width="70dp"
+            android:layout_height="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="69dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="#F68C19"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/children_tab_total"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/txtForMarkedStudentTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3sp"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/CHILDERN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="CHILDERN"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1View"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/layoutForListHeader"
+
+        android:background="@color/line"
+
+
+        />
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1View"
+        >
+
+        <!-- place your view here -->
+
+    <ListView
+        android:id="@+id/listForAttDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#E9E9E9"
+       >
+
+    </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/addActivityLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_activity" />
+
+        <TextView
+            android:id="@+id/activityLabelText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Add Activity"
+            android:textColor="@color/darkgrey"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addVacLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|left"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_vacation" />
+
+        <TextView
+            android:id="@+id/vaccationLbelText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Add Vacation"
+            android:textColor="@color/darkgrey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addRetriverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|left"
+
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/background"
+            android:src="@drawable/retrieval_note"
+
+            />
+
+        <TextView
+            android:id="@+id/retriverText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Add Retriver Note"
+            android:textColor="@color/darkgrey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addAbsenceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/new_absence_note" />
+
+        <TextView
+            android:id="@+id/absdgLabelText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Add Absence Note"
+            android:textColor="@color/darkgrey" />
+    </LinearLayout>
+</LinearLayout>

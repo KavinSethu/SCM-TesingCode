@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+     <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/layout2"
+            android:background="#E8E8E8" 
+            >
+
+            <EditText
+                android:id="@+id/serchbar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center"
+                android:hint="Search"
+                android:padding="5sp"
+                android:textColor="#88888E"
+                android:imeOptions="actionSearch" 
+                android:inputType="text"
+                android:maxLines="1"/>
+
+            <ImageView
+                android:id="@+id/srchide"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="125dp"
+                android:background="@drawable/srchtwo" />
+            <ImageView
+                android:id="@+id/srchshow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/srchtwo"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ED74A9"
+        android:layout_below="@+id/layout3"
+        android:orientation="horizontal"
+       
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/publish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="#D66A9A"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/plush"/>
+
+            <TextView
+                android:id="@+id/pbls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:background="#CB6592"
+                android:padding="5dp"
+                android:text="Publish"
+                android:textSize="15dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="#ED74A9"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/edu" />
+
+            <TextView
+                android:id="@+id/pst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:background="#CB6592"
+                android:padding="5dp"
+                android:text="Posts"
+                android:textSize="15dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+                android:layout_height="30dp"
+        android:layout_below="@+id/main_layout"
+        android:background="#ED74A9" >
+
+        <TextView
+            android:id="@+id/Fltr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="Filter"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/down" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/posts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:dividerHeight="3dp"
+        android:cacheColorHint="#00000000"
+        android:scrollingCache="false"
+        android:layout_below="@+id/filter"
+        >
+    </ListView>
+
+</RelativeLayout>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- xmlns:tools="http://schemas.android.com/tools" -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="match_parent" -->
+<!-- > -->
+
+
+<!-- <RelativeLayout -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="65dp" -->
+<!-- android:background="#ED74A9" -->
+<!-- > -->
+
+
+<!-- <RelativeLayout -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="45dp" -->
+<!-- android:layout_centerHorizontal="true" -->
+<!-- android:layout_centerInParent="true" -->
+<!-- android:layout_marginLeft="20dp" -->
+<!-- android:layout_marginRight="20dp" > -->
+
+
+<!-- <ImageView -->
+<!-- android:id="@+id/img4" -->
+<!-- android:layout_width="25dp" -->
+<!-- android:layout_height="26dp" -->
+<!-- android:layout_alignParentLeft="true" -->
+<!-- android:layout_centerVertical="true" -->
+<!-- android:layout_marginLeft="9dp" -->
+
+
+<!-- android:background="#ffffff" -->
+<!-- android:gravity="center_horizontal" /> -->
+
+
+<!-- <TextView -->
+<!-- android:id="@+id/text3" -->
+<!-- android:layout_width="80dp" -->
+<!-- android:layout_height="35dp" -->
+<!-- android:layout_marginLeft="9dp" -->
+<!-- android:layout_toRightOf="@+id/img4" -->
+<!-- android:background="#E06EA1" -->
+<!-- android:layout_centerInParent="true" -->
+<!-- android:gravity="center" -->
+<!-- android:text="Create" -->
+<!-- android:textColor="#fff" -->
+<!-- android:textSize="12sp" -->
+<!-- android:textStyle="bold" -->
+<!-- android:fontFamily="opensansregular.ttf" /> -->
+
+
+<!-- <ImageView -->
+<!-- android:id="@+id/img5" -->
+<!-- android:layout_width="25dp" -->
+<!-- android:layout_height="26dp" -->
+<!-- android:layout_centerVertical="true" -->
+
+
+<!-- android:layout_marginLeft="15dp" -->
+<!-- android:layout_toLeftOf="@+id/txt4" -->
+<!-- android:background="#ffffff" /> -->
+
+
+<!-- <TextView -->
+<!-- android:id="@+id/txt4" -->
+<!-- android:layout_width="80dp" -->
+<!-- android:layout_height="35dp" -->
+<!-- android:layout_alignParentRight="true" -->
+<!-- android:layout_centerInParent="true" -->
+<!-- android:background="#E06EA1" -->
+<!-- android:gravity="center" -->
+<!-- android:layout_marginLeft="9dp" -->
+<!-- android:text="Filter" -->
+<!-- android:textColor="#fff" -->
+<!-- android:textSize="12sp" -->
+<!-- android:textStyle="bold" -->
+<!-- android:fontFamily="opensansregular.ttf" /> -->
+<!-- </RelativeLayout> -->
+<!-- </RelativeLayout> -->
+
+
+<!-- </RelativeLayout> -->

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_marginBottom="2dp"
+    >
+
+    <ImageView
+        android:id="@+id/childImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/child_allergie" />
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/childImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/child_allergie"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"/>-->
+    <TextView
+        android:id="@+id/childNameText"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/childImageView"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Shail Kappor"
+        android:textColor="@color/darkgrey"
+        android:paddingBottom="5dp"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/childImageView"
+        android:background="@color/newgrey"
+        android:orientation="vertical"
+        android:minHeight="95dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/allergieNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text=" Hello wqwq wqwqw wqwqw"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+      <!--  <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:scrollbars="vertical"
+            android:layout_height="65dp">-->
+
+            <TextView
+                android:id="@+id/allergieDescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:inputType="textMultiLine"
+                android:padding="2dp"
+                android:text="wqwq  wq w q wwqwqwq wqwqwqw wqwqwqw wqwqwq wqwqwqw wqwqw wqwqw wqwqw wqwqwq wq wqwqw wqwq  wq w q wwqwqwq wqwqwqw wqwqwqw wqwqwq wqwqwqw wqwqw wqwqw wqwqw wqwqwq wq wqwqw wqwq  wq w q wwqwqwq wqwqwqw wqwqwqw wqwqwq wqwqwqw wqwqw wqwqw wqwqw wqwqwq wq wqwqw wqwq  wq w q wwqwqwq wqwqwqw wqwqwqw wqwqwq wqwqwqw wqwqw wqwqw wqwqw wqwqwq wq wqwqw"
+                android:textColor="@color/darkgrey"
+                android:textSize="13sp" />
+<!--
+        </ScrollView>
+-->
+    </LinearLayout>
+
+
+</RelativeLayout>

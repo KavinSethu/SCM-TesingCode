@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_notes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newgrey"
+    android:orientation="vertical"
+    tools:context="com.pnf.elar.app.activity.schedule.AddFoodMenuActivity">
+
+    <include
+        layout="@layout/schedule_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+           >
+            <TextView
+                android:id="@+id/noFilesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No file uploaded for food menu"
+                android:textColor="@color/darkgrey"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/foodMenuRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/header_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Food Menu"
+                android:textSize="17sp"
+                android:textColor="@color/darkgrey"
+                android:padding="5dp"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                >
+            <include
+                layout="@layout/startend_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/uploadText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+
+                android:text="Upload file"
+                android:textColor="@color/darkgrey"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/uploadIconImage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/upload_pdf" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/pdf_placeholder" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:id="@+id/uploadFoodMenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/blue"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_uploadFoodMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

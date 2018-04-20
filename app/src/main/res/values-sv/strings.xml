@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="username">Användarnamn / E-post</string>
+    <string name="password">Lösenord</string>
+    <string name="forgot">Glömt ditt lösenord?</string>
+    <string name="login">Logga in</string>
+    <string name="user_validation">Plese ange användarnamn / E-post</string>
+    <string name="pwd_validation">Ange lösenord</string>
+    <string name="cust_validation">Välj din kund</string>
+    <string name="invalid_user_pwd">Ogiltigt användarnamn och lösenord....</string>
+
+    <string name="lang">språk</string>
+    <string name="select_customer">Organisation</string>
+
+    <string-array name="languages">
+        <item>Svenska</item>
+        <item>English</item>
+    </string-array>
+
+    <string name="remember_me">Kom ihåg mig?</string>
+    <string name="no">Nej</string>
+    <string name="yes">ja</string>
+
+
+    <string name="submit">Skicka nytt lösenord</string>
+    <string name="email">Epost</string>
+
+
+    <string name="Publish">Publicera</string>
+    <string name="posts">Inlägg</string>
+    <string name="Filter">Filtrera</string>
+
+
+    <string name="new_post">nytt inlägg</string>
+    <string name="groups">grupper</string>
+    <string name="students">studenter</string>
+    <string name="retrieve">HÄMTA FÖRSLAG</string>
+    <string name="curriculum">LÄROPLANS TAGGAR</string>
+    <string name="notify">Meddela By Mail</string>
+    <string name="description">Beskrivning</string>
+    <string name="upload">Ladda upp en bild / Video</string>
+    <string name="save_draft">Spara utkast</string>
+
+
+    <string name="my_account">Mitt konto</string>
+    <string name="post">inlägg</string>
+    <string name="create">Skapa</string>
+    <string name="edu_blog">edu Blogg</string>
+
+
+    <string name="retrieval_list">Retrieval Lista</string>
+    <string name="cancel">Annullera</string>
+    <string name="select_group">Välj grupp</string>
+    <string name="student_selected">Student Selected</string>
+    <string name="all">Alla</string>
+    <string name="from">Från:</string>
+    <string name="to">Till:</string>
+
+
+    <!--///////// publish //////////////   -->
+
+    <string name="Create">Skapa</string>
+    <string name="Posts">inlägg</string>
+    <string name="New_Post">Nytt brev</string>
+    <string name="RETRIEVE_DRAFT">HÄMTA UTKAST</string>
+    <string name="Groups">grupper</string>
+    <string name="Students">studenter</string>
+    <string name="CURRICULUM_TAGS">LÄROPLANS TAGGAR</string>
+    <string name="NOTIFY_BY_MAIL">Meddela via POST</string>
+    <string name="Description">Beskrivning</string>
+    <string name="SAVE_DRAFT">SPARA UTKAST</string>
+    <string name="PUBLISH">PUBLICERA</string>
+
+
+    <string name="childInfo">Viktig Information</string>
+    <string name="edit">Editera</string>
+
+    <string name="replace">Byta ut</string>
+
+    <string name="user_selected">Användare</string>
+
+    <string name="users">Användare</string>
+    <string name="usedraft">Använd Utkast</string>
+    <string name="removedraft">Ta bort</string>
+    <string name="for_label">För</string>
+    <string name="by">Av</string>
+    <string name="date">Datum</string>
+    <string name="filter">FILTRERA</string>
+    <string name="mine_only">gruvan endast</string>
+
+    <string name="delete">Radera</string>
+    <string name="save">Spara</string>
+
+
+    <!--Calendar-->
+
+    <string name="action_today">I dag</string>
+    <string name="action_day_view">Dag</string>
+    <string name="action_week_view">Vecka</string>
+    <string name="action_month_view">Månad</string>
+
+    <string name="addactivity">Skapa Bokning</string>
+    <string name="addvaccation">lägga vaccation</string>
+
+    <string name="startdate">Start datum</string>
+    <string name="enddate">Slutdatum</string>
+    <string name="schedule_title">Titel</string>
+
+    <string name="select_school">Välj din skola</string>
+    <string name="imagenot_saved">Bilden inte sparas</string>
+    <string name="image_saved">bilden sparats</string>
+    <string name="file_download">Fil för nedladdning</string>
+    <string name="loading_image">Laddar bild....</string>
+    <string name="image_error">Bild finns inte eller nätverks fel</string>
+    <string name="save_error">Ett fel uppstod. Försök igen senare.</string>
+    <string name="download_completed">nedladdning avslutad</string>
+    <string name="download_failed">hämta failed..please prova igen</string>
+
+    <string name="wait_progress">Vänta...</string>
+
+    <string name="video">Video</string>
+
+    <string name="upload_image_video">Ladda upp bild / video</string>
+
+    <string name="go_to_login">Ett mail har skickats med instruktioner för att återställa ditt lösenord.</string>
+
+    <string name="internet">internet</string>
+    <string name="error_internet">Din internetanslutning är inte aktiverad. Vänligen sätt på för att använda programmet</string>
+    <!--<string name="network_turnon_error">Vänligen sätt på ditt nätverk</string>-->
+    <string name="network_turnon_error">Ingen koppling till Internet Anslut till wifi med uppkoppling &amp; försök igen.</string>
+    <string name="check_network_conn">Kontrollera din nätverksanslutning</string>
+    <string name="title_activity_settings">inställningar</string>
+
+    <string name="logout">Logga ut</string>
+    <string name="agree">Hålla med</string>
+    <string name="disagree">Instämmer inte alls</string>
+    <string name="term_of_use">Villkor</string>
+    <string name="success">Framgång</string>
+    <string name="check_all_term">Vänligen kontrollera alla användarvillkor</string>
+
+</resources>

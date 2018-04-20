@@ -1,0 +1,254 @@
+-injars 'D:\AndroidStudioProjects\SmartClassRoom_Update\SCM-TesingCode\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'D:\AndroidStudioProjects\SmartClassRoom_Update\SCM-TesingCode\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\user\AppData\Local\Android\Sdk\build-tools\23.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'D:\AndroidStudioProjects\SmartClassRoom_Update\SCM-TesingCode\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.pnf.elar.app.UILApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.pnf.elar.app.SplashActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.pushnotification.GcmBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.pushnotification.GCMNotificationIntentService {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.Login {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.Remember_me {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.Forgot_password {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.Post_play_video {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.Curriculum_tags {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.Curriculam_tag_post {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.Curriculam_tag_edit {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.Drawer {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.View_pageraimages {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.FootMenuPdfView {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.CurTagDetailsActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AsynchronousActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.ActivityListByDateActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AddActivityActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AddVaccationActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AddFoodMenuActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.PhotoGalleryActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.FoodNoteActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.util.FileUpload.FileChooser {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.FilePicker {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AddAbsenceNoteTeacherActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.ViewAbsentNoteActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.UpdateActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AddActivityParent {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AddRetriverParentActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AddActivityStudent {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.AddWholedaySickParentActivity {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.activity.schedule.ViewactivityStudentParent {
+    <init>();
+}
+
+-keep class com.pnf.elar.app.TermsOfUseActivity {
+    <init>();
+}
+
+-keep class com.soundcloud.android.crop.CropImageActivity {
+    <init>();
+}
+
+-keep class droidninja.filepicker.FilePickerActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.common.api.GoogleApiActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.appinvite.PreviewActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService {
+    <init>();
+}
+
+-keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.cast.framework.media.MediaNotificationService {
+    <init>();
+}
+
+-keep class com.google.android.gms.cast.framework.ReconnectionService {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdService {
+    <init>();
+}
+
+-keep class com.google.firebase.provider.FirebaseInitProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep class com.google.firebase.messaging.FirebaseMessagingService {
+    <init>();
+}
+
+-keep class com.google.android.gms.tagmanager.TagManagerService {
+    <init>();
+}
+
+-keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}
